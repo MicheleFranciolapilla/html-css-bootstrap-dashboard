@@ -44,10 +44,14 @@
 /* .debug_r */
 /* .debug_g */
 /* .debug_b */
+/* .debug_p */
+/* .debug_o */
 /* .debug_bg_y */
 /* .debug_bg_r */
 /* .debug_bg_g */
 /* .debug_bg_b */
+/* .debug_bg_p */
+/* .debug_bg_o */
 /********************************/
 
 /* Debug bordo giallo*/
@@ -70,6 +74,15 @@
     border: 5px solid blue;
 }
 
+/* Debug bordo pink*/
+.debug_p{
+    border: 5px solid pink;
+}
+
+/* Debug bordo arancio*/
+.debug_o{
+    border: 5px solid orange;
+}
 /* Debug sfondo giallo */
 .debug_bg_y{
     background-color: yellow;
@@ -90,6 +103,15 @@
     background-color: blue;
 }
 
+/* Debug sfondo pink */
+.debug_bg_p{
+    background-color: pink;
+}
+
+/* Debug sfondo arancio */
+.debug_bg_o{
+    background-color: orange;
+}
 /****************************************/
 /**********　SEZIONE UTILITIES **********/
 /****************************************/

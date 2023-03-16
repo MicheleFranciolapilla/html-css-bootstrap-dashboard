@@ -1,0 +1,24 @@
+/* DICHIARAZIONE VARIABILI */
+:root
+{
+    /* VARIABILI DIMENSIONALI */
+    --header_height:        7vh;
+    /* VARIABILI CROMATICHE */
+
+}
+
+header
+{
+    height: var(--header_height);
+}
+
+#side_bar
+{
+    top: var(--header_height);
+}
+
+/* #sliding_core > #table_box,
+#sliding_core > #faq
+{
+    min-width: 60%;
+} */
