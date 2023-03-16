@@ -2,14 +2,35 @@
 :root
 {
     /* VARIABILI DIMENSIONALI */
-    --header_height:        7vh;
+    --header_height:        10vh;
     /* VARIABILI CROMATICHE */
+    --nav_bar_color:        #FFFFFF;
     --side_bar_color:       #051E34;
 }
 
-header
+nav
 {
     height: var(--header_height);
+    background-color: var(--nav_bar_color)!important;
+    padding-top: 0 !important;
+}
+
+ nav a
+{
+    height: var(--header_height);
+    line-height: var(--header_height);
+    padding-top: 0 !important;
+    padding-bottom: 10px !important;
+}
+
+nav a > #logo_small
+{
+    height: 75%;
+}
+
+nav a > #logo_wide
+{
+    height: 50%;
 }
 
 #side_bar
@@ -20,10 +41,7 @@ header
     background-size: cover;
 }
 
-
-/* MEDIA QUERY */
-/* BREAKPOINT: 960 PIXEL (LG) */
-/* @media only screen and (min-width: 960px)
+#sliding_core
 {
-    
-} */
+    margin-top: var(--header_height);
+}
