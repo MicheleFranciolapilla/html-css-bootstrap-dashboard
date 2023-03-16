@@ -4,7 +4,7 @@
     /* VARIABILI DIMENSIONALI */
     --header_height:        7vh;
     /* VARIABILI CROMATICHE */
-
+    --side_bar_color:       #051E34;
 }
 
 header
@@ -15,10 +15,15 @@ header
 #side_bar
 {
     top: var(--header_height);
+    background-color: var(--side_bar_color);
+    background-image: url(../img/sidebar-bg.png);
+    background-size: cover;
 }
 
-/* #sliding_core > #table_box,
-#sliding_core > #faq
+
+/* MEDIA QUERY */
+/* BREAKPOINT: 960 PIXEL (LG) */
+/* @media only screen and (min-width: 960px)
 {
-    min-width: 60%;
+    
 } */
