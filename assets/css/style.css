@@ -20,11 +20,6 @@ a
     text-decoration: none;
 }
 
-main
-{
-    height: 100vh;
-}
-
 #side_bar
 {
     top: var(--header_height);
@@ -42,6 +37,12 @@ main
 #sliding_core #boolean
 {
     background-color: #1B72E8;
+}
+
+#sliding_core #boolean a.badge
+{
+    font-size: 0.5rem;
+    background-color: #165BBA;
 }
 
 #sliding_core #lower_items h5
@@ -63,7 +64,7 @@ main
     background-color: red;
 }
 
-#sliding_core #lower_items #left_items #table_box span.bedge
+#sliding_core #lower_items #left_items #table_box span.badge
 {
     font-size: x-small;
 }
