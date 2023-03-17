@@ -31,6 +31,7 @@ a
 #sliding_core
 {
     margin-top: var(--header_height);
+    margin-bottom: 1rem;
 }
 
 #sliding_core #boolean
