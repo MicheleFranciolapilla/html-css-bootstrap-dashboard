@@ -20,6 +20,11 @@ a
     text-decoration: none;
 }
 
+main
+{
+    height: 100vh;
+}
+
 #side_bar
 {
     top: var(--header_height);
