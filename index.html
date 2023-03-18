@@ -54,7 +54,108 @@
                     <div id="boolean" class="col-12 p-0 d-flex flex-column flex-md-row justify-content-between text-white">
                       <div class="order-md-last p-2">
                         <span>Nuovo Studente </span>
-                        <a class="btn btn-outline-info mx-1 text-white" href="#">+</a>
+                        <a class="btn btn-outline-info mx-1 text-white" data-bs-toggle="offcanvas" href="#offcanvas_view" role="button" aria-controls="offcanvas_view">
+                          +
+                        </a>
+                        <!-- OFFCANVAS -->
+                        <div class="offcanvas offcanvas-end w-100 text-black-50" tabindex="-1" id="offcanvas_view" aria-labelledby="offcanvas_view_label">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-dark" id="offcanvas_view_label">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <!-- FORM DI INSERIMENTO DATI DEL NUOVO STUDENTE -->
+                            <form class="row g-3">
+
+                              <!-- NOME -->
+                              <div class="col-12 col-md-6">
+                                <label for="input_name" class="form-label text-primary">Nome</label>
+                                <input type="text" class="form-control" id="input_name" required>
+                              </div>
+
+                              <!-- COGNOME -->
+                              <div class="col-12 col-md-6">
+                                <label for="input_surname" class="form-label text-primary">Cognome</label>
+                                <input type="text" class="form-control" id="input_surname" required>
+                              </div>
+
+                              <!-- EMAIL -->
+                              <div class="col-12">
+                                <label for="input_email" class="form-label text-primary">Indirizzo email</label>
+                                <div class="input-group">
+                                  <div class="input-group-text text-primary">@</div>
+                                  <input type="email" class="form-control" id="input_email" placeholder="indirizzo@dominio" required>
+                                </div>
+                              </div>
+
+                              <!-- PASSWORD -->
+                              <div class="col-12 col-md-6">
+                                <label for="input_pswd" class="form-label text-primary">Password</label>
+                                <input type="password" class="form-control" id="input_pswd" placeholder="Digita password" required>
+                              </div>
+
+                              <!-- CONFERMA PASSWORD -->
+                              <div class="col-12 col-md-6">
+                                <label for="confirm_pswd" class="form-label text-primary">Conferma Password</label>
+                                <input type="password" class="form-control" id="confirm_pswd" required>
+                              </div>
+
+                              <!-- INDIRIZZO -->
+                              <div class="col-12">
+                                <label for="input_address" class="form-label text-primary">Indirizzo</label>
+                                <input type="text" class="form-control" id="input_address" required>
+                              </div>
+
+                              <!-- CITTA' -->
+                              <div class="col-12 col-md-6">
+                                <label for="input_city" class="form-label text-primary">Città</label>
+                                <input type="text" class="form-control" id="input_city" required>
+                              </div>
+
+                              <!-- STATO -->
+                              <div class="col-12 col-md-4">
+                                <label for="input_state" class="form-label text-primary">Stato</label>
+                                <select class="form-select" id="input_state" required>
+                                  <option value="ch">中国</option>
+                                  <option value="de">Deutschland</option>
+                                  <option value="en">England</option>
+                                  <option value="es">España</option>
+                                  <option value="fr">France</option>
+                                  <option value="it">Italia</option>
+                                  <option selected value="jp">日本</option>
+                                  <option value="ko">한국</option>                                  
+                                  <option value="ru">Россия</option>
+                                  <option value="us">U.S.A.</option>
+                                </select>
+                              </div>
+
+                              <!-- CAP -->
+                              <div class="col-12 col-md-2">
+                                <label for="input_zip" class="form-label text-primary">CAP</label>
+                                <input type="number" class="form-control" id="input_zip" required>
+                              </div>
+
+                              <!-- SELEZIONE E CARICAMENTO FILE -->
+                              <div class="col-12">
+                                <label for="choose_file" class="form-label text-primary">Carica una foto</label>
+                                <input class="form-control" type="file" id="choose_file">
+                              </div>
+
+                              <!-- CHECK -->
+                              <div class="col-12">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="grid_check" required>
+                                  <label class="form-check-label text-primary" for="grid_check">Seleziona per proseguire</label>
+                                </div>
+                              </div>
+
+                              <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Salva</button>
+                                <button type="reset" class="btn btn-warning ms-2">Svuota</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
                       </div>
 
                       <div class="order-md-first p-2">

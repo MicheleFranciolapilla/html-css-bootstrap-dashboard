@@ -94,6 +94,11 @@ a
 /* LAPTOP / DESKTOP (LG) - BREAKPOINT WIDTH: 992 PIXEL */
 @media only screen and (min-width: 992px)
 {
+    #sliding_core #boolean div.order-md-last div.offcanvas
+    {
+        max-width: 50%;
+    }
+
     #sliding_core #lower_items #left_items #table_box #class_nr
     {
         min-width: 60%;
