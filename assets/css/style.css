@@ -11,7 +11,6 @@
 header
 {
     height: var(--header_height);
-    background-color: green;
     z-index: 999;
 }
 
@@ -39,8 +38,8 @@ a
     background-color: #1B72E8;
 }
 
-#sliding_core #boolean div.order-md-first,
-#sliding_core #boolean div.order-md-last
+#sliding_core #boolean div.order-sm-first,
+#sliding_core #boolean div.order-sm-last
 {
     min-width: 22%;
 }
@@ -94,7 +93,7 @@ a
 /* LAPTOP / DESKTOP (LG) - BREAKPOINT WIDTH: 992 PIXEL */
 @media only screen and (min-width: 992px)
 {
-    #sliding_core #boolean div.order-md-last div.offcanvas
+    #sliding_core #boolean div.order-sm-last div.offcanvas
     {
         max-width: 50%;
     }
