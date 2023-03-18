@@ -39,6 +39,12 @@ a
     background-color: #1B72E8;
 }
 
+#sliding_core #boolean div.order-md-first,
+#sliding_core #boolean div.order-md-last
+{
+    min-width: 22%;
+}
+
 #sliding_core #boolean a.badge
 {
     font-size: 0.5rem;
