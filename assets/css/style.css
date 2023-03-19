@@ -20,14 +20,15 @@ header
     z-index: 999;   
 }
 
-/* header #logo_box
+header #logo_box > #logo_small
 {
-    height: 100%;
+    height: 75%;
+    object-fit: contain;
 }
- */
-header > #logo_small
+
+header #logo_box > #logo_huge
 {
-    height: 70%;
+    width: 90%;
     object-fit: contain;
 }
 
@@ -106,6 +107,16 @@ header .navbar form > input.form-control
 #sliding_core #lower_items #left_items #table_box #class_nr
 {
     width: 50%;
+}
+
+/* BREAKPOINT WIDTH: 575 PIXEL */
+@media only screen and (min-width: 575px)
+{
+    header #logo_box > #logo_small
+    {
+        height: 50%;
+        object-fit: contain;
+    }   
 }
 
 /* BREAKPOINT WIDTH: 1200 PIXEL */
