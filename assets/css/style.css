@@ -20,16 +20,22 @@ header
     z-index: 999;   
 }
 
-/* header > #logo_box
+/* header #logo_box
 {
     height: 100%;
-} */
-
+}
+ */
 header > #logo_small
 {
     height: 70%;
     object-fit: contain;
 }
+
+header .navbar form,
+header .navbar form > input.form-control
+{
+    background-color: #E5E5E5 !important;
+} 
 
 #side_bar
 {
