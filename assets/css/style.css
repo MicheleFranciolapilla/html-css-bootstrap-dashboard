@@ -126,6 +126,17 @@ header .navbar form > input.form-control
 
 }
 
+/* BREAKPOINT WIDTH: 992 PIXEL */
+@media only screen and (min-width: 992px)
+{
+    #side_bar a > i
+    {
+        flex-basis: 40%;
+        column-gap: 15%;
+        align-self: center;
+    }
+}
+
 /* BREAKPOINT WIDTH: 1200 PIXEL */
 @media only screen and (min-width: 1200px)
 {
