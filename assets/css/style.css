@@ -16,7 +16,7 @@ a
 header
 {
     height: var(--header_height);
-    background-color: gray;
+    background-color: white;
     z-index: 999;   
 }
 
@@ -35,7 +35,7 @@ header #logo_box > #logo_huge
 header .navbar form,
 header .navbar form > input.form-control
 {
-    background-color: #E5E5E5 !important;
+    background-color: #E5E5E5;
 } 
 
 #side_bar
@@ -109,6 +109,7 @@ header .navbar form > input.form-control
     width: 50%;
 }
 
+/********** MEDIA QUERIES **********/
 /* BREAKPOINT WIDTH: 576 PIXEL */
 @media only screen and (min-width: 576px)
 {
@@ -117,6 +118,12 @@ header .navbar form > input.form-control
         height: 50%;
         object-fit: contain;
     }   
+
+    #side_bar a
+    {
+        font-size: x-small;
+    }
+
 }
 
 /* BREAKPOINT WIDTH: 1200 PIXEL */
