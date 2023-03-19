@@ -49,7 +49,8 @@ header .navbar form > input.form-control
 #sliding_core
 {
     margin-top: var(--header_height);
-    margin-bottom: 1rem;
+    height: calc(100vh - var(--header_height));
+    padding-bottom: 1rem;
 }
 
 #sliding_core #boolean
