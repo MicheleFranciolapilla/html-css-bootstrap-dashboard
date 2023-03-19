@@ -109,8 +109,8 @@ header .navbar form > input.form-control
     width: 50%;
 }
 
-/* BREAKPOINT WIDTH: 575 PIXEL */
-@media only screen and (min-width: 575px)
+/* BREAKPOINT WIDTH: 576 PIXEL */
+@media only screen and (min-width: 576px)
 {
     header #logo_box > #logo_small
     {
