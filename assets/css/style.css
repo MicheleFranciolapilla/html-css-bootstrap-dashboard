@@ -110,6 +110,16 @@ header .navbar form > input.form-control
     width: 50%;
 }
 
+#sliding_core #lower_items #right_items #todo ul.list-group > li:nth-child(odd)
+{
+    background-color: #ECEDEE;
+}
+
+#sliding_core #lower_items #right_items #todo ul.list-group > li:nth-child(even)
+{
+    background-color: #F8F9FA;
+}
+
 /********** MEDIA QUERIES **********/
 /* BREAKPOINT WIDTH: 576 PIXEL */
 @media only screen and (min-width: 576px)
@@ -150,4 +160,28 @@ header .navbar form > input.form-control
     {
         min-width: 60%;
     }
+}
+
+/********** EFFETTI HOVER **********/
+nav.navbar a.nav-link:hover,
+#boolean div.order-sm-first .badge:hover,
+#boolean div.order-sm-first h3:hover
+{
+    color: lightblue !important;
+}
+
+#side_bar a:hover
+{
+    background-color: lightblue;
+}
+
+#table_box table tbody i.border:hover
+{
+    background-color: darkblue;
+    color:white
+}
+
+#sliding_core #lower_items #right_items #todo ul.list-group > li:hover
+{
+    background-color: #E5E6E7;
 }
