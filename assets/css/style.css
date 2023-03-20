@@ -14,6 +14,7 @@ a
     text-decoration: none;
 }
 
+/* SEZIONE HEADER,NAV,BARRA DI NAVIGAZIONE */
 header
 {
     height: var(--header_height);
@@ -39,6 +40,7 @@ header .navbar form > input.form-control
     background-color: #E5E5E5;
 } 
 
+/* SEZIONE BARRA DEL MENU LATERALE */
 #side_bar
 {
     top: var(--header_height);
@@ -47,6 +49,7 @@ header .navbar form > input.form-control
     background-size: cover;
 }
 
+/* SEZIONE CORPO CENTRALE, CONTENENTE TABELLA E RIQUADRI INFORMATIVI */
 #sliding_core
 {
     margin-top: var(--header_height);
@@ -77,6 +80,7 @@ header .navbar form > input.form-control
     background-color: #F7F7F7; 
 }
 
+/* ICONA "CODE" CON BORDO CIRCOLARE */
 #sliding_core #lower_items #left_items #table_box .rounded_icon
 {
     display: inline-block;
@@ -95,6 +99,7 @@ header .navbar form > input.form-control
     font-size: x-small;
 }
 
+/* ICONE "PENCIL" E "CESTINO" NELLA TABELLA */
 #sliding_core #lower_items #left_items #table_box a > i
 {
     display: inline-block;
@@ -111,6 +116,8 @@ header .navbar form > input.form-control
     width: 50%;
 }
 
+/* LISTA "TO DO" CON ZEBRATURA SIMILE ALLA TABELLA */
+/***************************************************/
 #sliding_core #lower_items #right_items #todo ul.list-group > li:nth-child(odd)
 {
     background-color: #ECEDEE;
@@ -120,6 +127,7 @@ header .navbar form > input.form-control
 {
     background-color: #F8F9FA;
 }
+/***************************************************/
 
 /********** MEDIA QUERIES **********/
 /* BREAKPOINT WIDTH: 576 PIXEL */
@@ -135,7 +143,6 @@ header .navbar form > input.form-control
     {
         font-size: x-small;
     }
-
 }
 
 /* BREAKPOINT WIDTH: 992 PIXEL */

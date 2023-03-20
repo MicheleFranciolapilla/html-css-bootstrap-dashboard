@@ -18,20 +18,25 @@
     <title>Bootstrap Dashboard</title>
 </head>
 <body>
+    <!-- Header (fixed) il cui contenuto e' diviso in due elementi: area logo a sx e navbar a dx -->
     <header class="fixed-top">
       <div class="row h-100 m-0 p-0 gx-0 gx-sm-2">
+        <!-- Area logo -->
         <div id="logo_box" class="h-100 px-0 col-2 col-sm-1 d-flex justify-content-center align-items-center">
           <img id="logo_small" class="d-lg-none" src="assets/img/mobile-logo.png" alt="logo piccolo">
           <img id="logo_huge" class="d-none d-lg-inline-block" src="assets/img/logo.svg" alt="logo grande">
         </div>
+        <!-- Navbar -->
         <nav class="navbar col-10 col-sm-11">
           <div class="container-fluid d-flex">
+            <!-- Barra di ricerca -->
             <form class="flex-grow-1 d-flex border rounded-3">
               <button class="btn border-0" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
               <input class="form-control border-0" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
             </form>
+            <!-- Gruppo di 3 icone responsive -->
             <ul class="navbar-nav flex-row d-none d-lg-flex px-2">
               <li class="nav-item px-2">
                 <a class="nav-link text-black-50" href="#">
@@ -49,6 +54,7 @@
                 </a>
               </li>
             </ul>
+            <!-- Icona "campanella" con dropdown -->
             <span class="nav-item dropdown">
               <a class="nav-link px-1 px-sm-2" href="#" id="bell_dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: yellowgreen">
                   <i class="fa-solid fa-bell"></i>
@@ -64,11 +70,12 @@
       </div>
     </header>
 
+    <!-- Main, contenente side bar (fixed) a sx e corpo principale (con scrollbar) a dx -->
     <main class="container-fluid">
-
         <div class="row">
-
+            <!-- Side bar (flex) con sezione superiore e sezione inferiore-->
             <aside id="side_bar" class="nav px-1 py-2 mx-0 flex-column justify-content-between col-2 col-sm-1 position-fixed start-0 bottom-0">
+                <!-- Sezione superiore con 3 voci di menu (icona + testo responsive) -->
                 <div id="upper_menu" class="px-0 mx-0">
                     <a class="nav-link text-white center_text d-flex justify-content-center justify-content-lg-start" href="#">
                         <i class="fa-solid fa-house"></i>
@@ -83,18 +90,21 @@
                         <span class="d-none d-lg-inline-block">Signal</span>
                     </a>
                 </div>
+                <!-- Sezione inferiore con una voce di menu (icona + testo responsive) -->
                 <div id="lower_menu" class="px-0 mx-0">
                     <a class="nav-link text-white center_text d-flex justify-content-center justify-content-lg-start" href="#">
                         <i class="fa-solid fa-gear"></i>
                         <span class="d-none d-lg-inline-block">Admin</span>
                     </a>
                 </div>
-
             </aside>
-
+            <!-- Corpo principale con scrollbar -->
+            <!-- La/e colonna/e di offset compensa/no lo spazio sottostante la side bar (fixed) -->
             <div id="sliding_core" class="col-10 offset-2 col-sm-11 offset-sm-1 overflow-auto">
                 <div class="row">
+                    <!-- Settore superiore "boolean" (flex) con tre flex item che si ridimensionano e riposizionano a seconda del device -->
                     <div id="boolean" class="col-12 p-0 d-flex flex-column flex-sm-row justify-content-between text-white">
+                      <!-- Flex item per aggiunta studente mediante offcanvas -->
                       <div class="order-sm-last p-2">
                         <span>Nuovo Studente </span>
                         <a class="btn btn-outline-info mx-1 text-white" data-bs-toggle="offcanvas" href="#offcanvas_view" role="button" aria-controls="offcanvas_view">
@@ -200,7 +210,7 @@
                           </div>
                         </div>
                       </div>
-
+                      <!-- Flex item con titolo e badges responsive -->
                       <div class="order-sm-first p-2">
                         <div>
                           <a href="#">
@@ -208,6 +218,7 @@
                           </a> 
                           <a class="badge rounded-pill mx-1" href="#">Piano blaze</a>
                         </div>
+                        <!-- Div contenente i badges responsive -->
                         <div>
                           <a class="badge rounded-pill" href="#">3 app</a>
                           <span style="font-size: x-small"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></span>
@@ -217,7 +228,7 @@
                           <a class="badge rounded-pill d-none d-lg-inline-block" href="#">Boolean blog app</a>
                         </div>
                       </div>
-
+                      <!-- Flex item con l'informazione relativa agli studenti collegati -->
                       <div class="p-2">
                         <span>Studenti online negli</span>
                         <br class="d-md-none">
@@ -225,11 +236,12 @@
                         <h5>125</h5>
                       </div>
                     </div>
-
+                    <!-- Settore inferiore contenente i vari blocchi, diviso in parte sinistra e destra (che risulteranno incolonnati nei tablet e negli smartphone)-->
                     <div id="lower_items" class="col-12">
                       <div class="row">
+                        <!-- Elementi (sezioni) di sinistra -->
                         <div id="left_items" class="col-lg-8 px-2">
-
+                          <!-- Sezione tabella -->
                           <section id="table_box" class="col-12 mt-4 border border-3 rounded-3 border-info">
                             <h5 class="border-bottom border-3 border-info">Prossime classi</h5>
                             <div class="p-2">
@@ -424,7 +436,7 @@
                               </table>
                             </div>
                           </section>
-
+                          <!-- Sezione "domande frequenti" -->
                           <section id="faq" class="col-12 mt-4 border border-3 rounded-3 border-info">
                             <h5 class="border-bottom border-3 border-info">F.A.Q.</h5>
                             <div class="p-2">
@@ -463,9 +475,9 @@
                             </div>
                           </section>
                         </div>
-
+                        <!-- Elementi (sezioni) di destra -->
                         <div id="right_items" class="col-lg-4 px-2">
-
+                          <!-- Sezione "to do" con checklist -->
                           <section id="todo" class="col-12 mt-4 border border-3 rounded-3 border-info">
                             <h5 class="border-bottom border-3 border-info">TODO</h5>
                             <div class="p-2">
@@ -485,7 +497,7 @@
                               </ul>
                             </div>
                           </section>
-
+                          <!-- Sezione diagramma (card) -->
                           <section id="chart" class="col-12 mt-4 border border-3 rounded-3 border-info p-3">
                             <div>
                               <div class="card w-100">
@@ -507,12 +519,9 @@
                           </section>
                         </div>
                       </div>
-
                     </div>
-
                 </div>
             </div>
-
         </div>
     </main>
 
