@@ -2,10 +2,11 @@
 :root
 {
     /* VARIABILI DIMENSIONALI */
-    --header_height:        10vh;
+    --header_height:            10vh;
+    --header_height_landscape:  15vh;
     /* VARIABILI CROMATICHE */
-    --nav_bar_color:        #FFFFFF;
-    --side_bar_color:       #051E34;
+    --nav_bar_color:            #FFFFFF;
+    --side_bar_color:           #051E34;
 }
 
 a
@@ -159,6 +160,26 @@ header .navbar form > input.form-control
     #sliding_core #lower_items #left_items #table_box #class_nr
     {
         min-width: 60%;
+    }
+}
+
+/* BREAKPOINT HEIGHT: 500 PIXEL */
+@media only screen and (max-height: 500px)
+{
+    header
+    {
+        height: var(--header_height_landscape);
+    }
+
+    #side_bar
+    {
+        top: var(--header_height_landscape);
+    }
+
+    #sliding_core
+    {
+        margin-top: var(--header_height_landscape);
+        height: calc(100vh - var(--header_height_landscape));
     }
 }
 
