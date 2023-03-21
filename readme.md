@@ -34,4 +34,4 @@
 
 ---
 
-***La pagina e' estremamente flessibile ed adattabile ai vari device e mantiene una perfetta struttura fino a valori inferiori a 350 pixel (vw) e 350 pixel (vh)***
+***La pagina e' estremamente flessibile ed adattabile ai vari device e mantiene una perfetta struttura fino a valori inferiori a 340 pixel (vw) e 330 pixel (vh)***
